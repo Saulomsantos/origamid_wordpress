@@ -11,12 +11,10 @@
 			</div>
 
 			<div class="grid-8">
-				<h2><?php the_field('titulo_historia'); ?></h2>
-				<?php the_field('texto_da_historia'); ?>
-				<h2>Visão</h2>
-				<p>Não obstante, a expansão dos mercados mundiais faz parte de um processo de gerenciamento de alternativas às soluções ortodoxas.</p>
-				<h2>Valores</h2>
-				<p>O empenho em analisar a consolidação das estruturas apresenta tendências no sentido de aprovar a manutenção dos índices pretendidos.</p>
+				<?php if(have_rows('conteudo_sobre')) : while(have_rows('conteudo_sobre')) : the_row(); ?>
+					<h2><?php the_sub_field('titulo_sobre'); ?></h2>
+					<?php the_sub_field('texto_sobre'); ?>
+				<?php endwhile; else : endif; ?>
 			</div>
 		</section>
 <?php endwhile; else: endif; ?>

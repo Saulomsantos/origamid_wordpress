@@ -21,7 +21,8 @@
 
 			<h1><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rest.png" alt="Rest"></h1>
 
-			<p>Rua Marechal 29 – Copacabana – Rj</p>
-            <p class="telefone">2422-9201</p>
+			<?php $contato = get_page_by_title('contato'); ?>
+			<p><?php the_field('endereco_header', $contato) ?></p>
+            <p class="telefone"><?php the_field('telefone_header', $contato) ?></p>
             <?php wp_head(); ?>
 		</header>

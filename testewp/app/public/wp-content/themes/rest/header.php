@@ -13,11 +13,13 @@
 		
 		<header>
 			<nav>
-				<ul>
-					<li class="current_page_item"><a href="/">Menu</a></li>
-					<li><a href="/sobre/">Sobre</a></li>
-					<li><a href="/contato/">Contato</a></li>
-				</ul>
+				<?php
+					$args = array(
+						'menu' => 'principal',
+						'container' => false
+					);
+					wp_nav_menu( $args );
+				?>
 			</nav>
 
 			<h1><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rest.png" alt="Rest"></h1>

@@ -60,10 +60,6 @@
 				<div class="portfolio_lista">
 					<?php include(TEMPLATEPATH . "/inc/clientes-portfolio.php"); ?>
 				</div>
-				<div class="call">
-					<p><?php the_field('chamada_portfolio'); ?></p>
-					<a href="/portfolio/" class="btn">Portfólio</a>
-				</div>
 			</div>
 		</section>
 

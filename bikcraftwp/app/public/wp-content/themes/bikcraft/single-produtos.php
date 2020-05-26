@@ -7,19 +7,13 @@
 
 		<section class="container produto_item animar-interno">
 			<div class="grid-11">
-				<img src="img/produtos/bikcraft-passeio-1.jpg" alt="Bikcraft Passeio">
-				<h2>Passeio</h2>
+				<img src="<?php the_field('foto_produto1'); ?>" alt="Bikcraft <?php the_title(); ?>">
+				<h2><?php the_title(); ?></h2>
 			</div>
-			<div class="grid-5 produto_icone"><img src="img/produtos/passeio.png" alt="Icone Passeio"></div>
-			<div class="grid-8"><img src="img/produtos/bikcraft-passeio-2.jpg" alt="Bikcraft Passeio"></div>
+			<div class="grid-5 produto_icone"><img src="<?php the_field('icone_produto'); ?>" alt="Icone <?php the_title(); ?>"></div>
+			<div class="grid-8"><img src="<?php the_field('foto_produto2'); ?>" alt="Bikcraft <?php the_title(); ?>"></div>
 			<div class="grid-8 produto_info">
-				<p>Muito melhor do que passear pela orla a vidros fechados. A Bikcraft Passeio é uma bicicleta que une conforto e praticidade para o seu dia a dia. Você nunca mais vai querer saber de outra.</p>
-				<ul>
-					<li>Conforto</li>
-					<li>Praticidade</li>
-					<li>Design</li>
-					<li>Versatilidade</li>
-				</ul>
+				<?php the_content(); ?>
 			</div>
 		</section>
 

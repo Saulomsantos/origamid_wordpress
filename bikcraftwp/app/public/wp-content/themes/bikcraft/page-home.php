@@ -57,11 +57,13 @@
 							<img src="<?php the_field('icone_produto'); ?>" alt="Bikcraft <?php the_title(); ?>">
 						</div>
 						<h3><?php the_title(); ?></h3>
-						<p>Muito melhor do que passear pela orla a vidros fechados.</p>
+						<p><?php the_field('resumo_produto'); ?></p>
 					</li>
 				</a>
 
 				<?php endwhile; else: endif; ?>
+
+				<?php wp_reset_query(); wp_reset_postdata(); ?>
 
 			</ul>
 

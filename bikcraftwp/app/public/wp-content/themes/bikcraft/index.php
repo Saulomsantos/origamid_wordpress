@@ -2,12 +2,27 @@
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-			<h1><?php the_title(); ?></h1>
-			<?php the_content(); ?>
+	<article>
+		<section class="introducao-interna introducao-geral">
+			<div class="container">
+				<h1><?php the_title(); ?></h1>
+			</div>
+		</section>
 
-		<?php endwhile; else : ?>
+		<section class="container conteudo-geral">
+			<div class="grid-8">
+				<?php the_content(); ?>
+			</div>
+		</section>
+	</article>
 
-		<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+	<?php endwhile; else : ?>
+
+		<section class="introducao-interna introducao-geral">
+			<div class="container">
+				<h1>Página não encontrada.</h1>
+			</div>
+		</section>
 	
 	<?php endif; ?>
 

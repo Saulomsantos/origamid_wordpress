@@ -1,0 +1,1 @@
+2020/06/21 18:55:53 [error] 14748#7272: *1633 upstream timed out (10060: FormatMessage() error:(15100)) while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-admin/admin-ajax.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10010", host: "bikcraftwp.test", referrer: "http://bikcraftwp.test/wp-admin/admin.php?page=w3tc_general"

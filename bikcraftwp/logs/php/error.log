@@ -61,3 +61,27 @@ Stack trace:
 #3 phar://C:/Users/saulo/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1237): require('E:\\Works\\Cursos...')
 #4 phar://C:/Users/saulo/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1158): WP_CLI\Runner->load_wordpress()
 #5 phar://C:/Users/saulo/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/ in E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-includes\wp-db.php on line 1661
+[12-Jul-2020 04:10:39 UTC] Shell mysql dump error. Change Mysql dump engine in PHP mode DETAIL:
+[12-Jul-2020 04:10:39 UTC] Runtime error in DUP_Database::Build DETAIL:Exception: Exception: DUPLICATOR ERROR: Please see the 'Package Log' file link below. in E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-content\plugins\duplicator\classes\class.logging.php:275
+Stack trace:
+#0 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-content\plugins\duplicator\classes\package\class.pack.database.php(546): DUP_Log::Error('Shell mysql dum...', '', 1)
+#1 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-content\plugins\duplicator\classes\package\class.pack.database.php(187): DUP_Database->mysqlDump('C:/xampp/mysql/...')
+#2 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-content\plugins\duplicator\classes\package\class.pack.php(1302): DUP_Database->build(Object(DUP_Package), 1)
+#3 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-content\plugins\duplicator\ctrls\ctrl.package.php(97): DUP_Package->runZipBuild()
+#4 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-includes\class-wp-hook.php(287): duplicator_package_build('')
+#5 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#6 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-admin\admin-ajax.php(175): do_action('wp_ajax_duplica...')
+#8 {main}
+[12-Jul-2020 04:12:13 UTC] Shell mysql dump error. Change Mysql dump engine in PHP mode DETAIL:
+[12-Jul-2020 04:12:13 UTC] Runtime error in DUP_Database::Build DETAIL:Exception: Exception: DUPLICATOR ERROR: Please see the 'Package Log' file link below. in E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-content\plugins\duplicator\classes\class.logging.php:275
+Stack trace:
+#0 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-content\plugins\duplicator\classes\package\class.pack.database.php(546): DUP_Log::Error('Shell mysql dum...', '', 1)
+#1 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-content\plugins\duplicator\classes\package\class.pack.database.php(187): DUP_Database->mysqlDump('C:/xampp/mysql/...')
+#2 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-content\plugins\duplicator\classes\package\class.pack.php(1302): DUP_Database->build(Object(DUP_Package), 1)
+#3 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-content\plugins\duplicator\ctrls\ctrl.package.php(97): DUP_Package->runZipBuild()
+#4 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-includes\class-wp-hook.php(287): duplicator_package_build('')
+#5 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#6 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-admin\admin-ajax.php(175): do_action('wp_ajax_duplica...')
+#8 {main}

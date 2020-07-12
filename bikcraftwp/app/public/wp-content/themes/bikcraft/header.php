@@ -24,7 +24,7 @@
 
 		<header class="header">
 			<div class="container">
-				<a href="/" class="grid-4">
+				<a href="<?php bloginfo('url'); ?>" class="grid-4">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/bikcraft.png" alt="Bikcraft">
 				</a>
 				<nav class="grid-12 header_menu">

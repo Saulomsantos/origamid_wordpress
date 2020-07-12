@@ -1,0 +1,66 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: July 12, 2020 4:12 am
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.3.36
+WORDPRESS:	5.4.2
+PHP INFO:	7.3.5 | SAPI: cgi-fcgi
+SERVER:		nginx/1.16.0 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (256M default) 
+MEMORY STACK: 4MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   MYSQLDUMP
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported
+MYSQL DUMP ERROR 2
+
+==================================================================================
+DUPLICATOR ERROR
+Please try again! If the error persists see the Duplicator 'Help' menu.
+---------------------------------------------------------------------------------
+MESSAGE:
+	Shell mysql dump error. Change Mysql dump engine in PHP mode
+TRACE:
+	 1. class.pack.database.php : Error (546)
+	 2. class.pack.database.php : mysqlDump (187)
+	 3. class.pack.php : build (1302)
+	 4. ctrl.package.php : runZipBuild (97)
+	 5. class-wp-hook.php : duplicator_package_build (287)
+	 6. class-wp-hook.php : apply_filters (311)
+	 7. plugin.php : do_action (478)
+	 8. admin-ajax.php : do_action (175)
+==================================================================================
+
+
+==================================================================================
+DUPLICATOR ERROR
+Please try again! If the error persists see the Duplicator 'Help' menu.
+---------------------------------------------------------------------------------
+MESSAGE:
+	Runtime error in DUP_Database::Build
+DETAILS:
+	Exception: Exception: DUPLICATOR ERROR: Please see the 'Package Log' file link below. in E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-content\plugins\duplicator\classes\class.logging.php:275
+Stack trace:
+#0 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-content\plugins\duplicator\classes\package\class.pack.database.php(546): DUP_Log::Error('Shell mysql dum...', '', 1)
+#1 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-content\plugins\duplicator\classes\package\class.pack.database.php(187): DUP_Database->mysqlDump('C:/xampp/mysql/...')
+#2 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-content\plugins\duplicator\classes\package\class.pack.php(1302): DUP_Database->build(Object(DUP_Package), 1)
+#3 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-content\plugins\duplicator\ctrls\ctrl.package.php(97): DUP_Package->runZipBuild()
+#4 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-includes\class-wp-hook.php(287): duplicator_package_build('')
+#5 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#6 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 E:\Works\Cursos\origamid\wordpress_cms\sites\bikcraftwp\app\public\wp-admin\admin-ajax.php(175): do_action('wp_ajax_duplica...')
+#8 {main}
+TRACE:
+	 1. class.pack.database.php : Error (222)
+	 2. class.pack.php : build (1302)
+	 3. ctrl.package.php : runZipBuild (97)
+	 4. class-wp-hook.php : duplicator_package_build (287)
+	 5. class-wp-hook.php : apply_filters (311)
+	 6. plugin.php : do_action (478)
+	 7. admin-ajax.php : do_action (175)
+==================================================================================
+

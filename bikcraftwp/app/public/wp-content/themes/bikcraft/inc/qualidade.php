@@ -13,7 +13,7 @@
     <?php if (!is_page('sobre')) { ?>
         <div class="call">
             <p><?php the_field('chamada_sobre', $sobre); ?></p>
-            <a href="/sobre/" class="btn btn-preto">Sobre</a>
+            <a href="<?php bloginfo('url'); ?>/sobre/" class="btn btn-preto">Sobre</a>
         </div>
     <?php } ?>
 </section>
